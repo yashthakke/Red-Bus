@@ -1,0 +1,142 @@
+/* ====== Container ====== */
+.addbus-container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #1f2937;
+}
+
+/* ====== Title ====== */
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 30px;
+}
+
+/* ====== Section headings ====== */
+.addbus-form h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #374151;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* ====== Labels ====== */
+.addbus-form label {
+  display: block;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* ====== Input & Select Fields ====== */
+.addbus-form input[type="text"],
+.addbus-form input[type="number"],
+.addbus-form input[type="time"],
+.addbus-form input[type="file"],
+.addbus-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #f9fafb;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.addbus-form input:focus,
+.addbus-form select:focus {
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  outline: none;
+}
+
+/* ====== Checkbox group ====== */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #f3f4f6;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkbox-group input {
+  accent-color: #2563eb;
+}
+
+.checkbox-group label:hover {
+  background: #e5e7eb;
+}
+
+/* ====== Submit Button ====== */
+.submit-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .checkbox-group {
+    gap: 8px;
+  }
+  .checkbox-group label {
+    flex: 0 0 100%;
+  }
+}
+/* ====== Section Headings ====== */
+.addbus-form h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e3a8a; /* deep indigo */
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+}
+
+/* Highlight style for specific section */
+.addbus-form h3.route-section {
+  color: #1d4ed8; /* brighter blue for emphasis */
+  border-bottom: none;
+  padding: 6px 10px;
+  background: linear-gradient(90deg, rgba(5, 1, 29, 0.08), transparent);
+  border-left: 4px solid #2563eb;
+  border-radius: 4px;
+}

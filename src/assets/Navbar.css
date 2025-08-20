@@ -1,0 +1,177 @@
+/* ====== Container ====== */
+.addbus-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #1f2937;
+}
+
+/* ====== Title ====== */
+.form-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* ====== Section Headings ====== */
+.addbus-form h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ====== Labels ====== */
+.addbus-form label {
+  display: block;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: #374151;
+  font-size: 13px;
+}
+
+/* ====== Input & Select Fields ====== */
+.addbus-form input[type="text"],
+.addbus-form input[type="number"],
+.addbus-form input[type="time"],
+.addbus-form input[type="file"],
+.addbus-form select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #f9fafb;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.addbus-form input:focus,
+.addbus-form select:focus {
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+  outline: none;
+}
+
+/* ====== Checkbox Group ====== */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #f3f4f6;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkbox-group input {
+  accent-color: #2563eb;
+}
+
+.checkbox-group label:hover {
+  background: #e5e7eb;
+}
+
+/* ====== Submit Button ====== */
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .checkbox-group label {
+    flex: 0 0 100%;
+  }
+}
+
+/* ===== Navbar Branding ===== */
+.navbar {
+  padding: 12px 20px;
+}
+
+.brand-text {
+  font-size: 18px;
+  color: #f9fafb;
+  letter-spacing: 1px;
+}
+
+/* ===== Nav Links ===== */
+.custom-link {
+  color: #d1d5db !important;
+  font-weight: 500;
+  padding: 8px 14px !important;
+  transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transform: translateY(-2px);
+}
+
+/* ===== Logout Button ===== */
+.logout-btn {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #b91c1c !important;
+  transform: scale(1.05);
+}
+
+
+/* Hide dropdown by default */
+.hover-dropdown .dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Show on hover */
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
