@@ -22,6 +22,7 @@ import { UploadLogo } from './Company/UploadLogo';
 import { Addbus } from './Company/Addbus';
 import { ViewBus } from './Company/ViewBus';
 import { CompanyLogo } from './Company/CompanyLogo';
+import { OtpVerification } from './Components/OtpVerification';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
           <Route path='addbus' element={<Addbus />}></Route>
           <Route path='viewbus' element={<ViewBus />}></Route>
           <Route path='viewlogo' element={<CompanyLogo />}></Route>
+          <Route path='otpverification' element={<OtpVerification/>}></Route>
 
 
 
