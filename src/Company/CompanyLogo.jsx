@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+
 export const CompanyLogo = ({ height = "40px" }) => {
   const [logoUrl, setLogoUrl] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -13,15 +14,20 @@ export const CompanyLogo = ({ height = "40px" }) => {
           headers: { Authorization: `Bearer ${token}` }
         });
 
-        if (res.data?.data?.length) {
-          setLogoUrl(res.data.data[0].file);
+        const logoData = res.data?.data?.[0];
+
+        if (logoData && logoData.logoUploaded) {
+          setLogoUrl(logoData.file);
+          localStorage.setItem("logoUploaded", "yes");
         } else {
-          console.warn("No logo found");
+          console.warn("No valid logo found");
           setLogoUrl(null);
+          localStorage.setItem("logoUploaded", "no");
         }
       } catch (error) {
         console.error("Error loading logo:", error);
         setLogoUrl(null);
+        localStorage.setItem("logoUploaded", "no");
       } finally {
         setLoading(false);
       }
