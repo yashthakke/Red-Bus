@@ -6,10 +6,7 @@ import { Navbar } from './Components/Navbar';
 import { Routes, Route } from 'react-router-dom';
 
 import { RedBus } from './Components/RedBus';
-import { Game } from './Components/Game';
 import { Uploadimg } from './assets/Uploadimg';
-import { EmployeeForm } from './EmployeeForm';
-import { EmployeeList } from './Components/EmployeeList';
 import { Signup } from './Components/Register/Signup';
 import { Login } from './Components/Register/Login';
 import { Company } from './Components/Company';
@@ -53,12 +50,6 @@ function App() {
           <Route path='viewbus' element={<ViewBus />}></Route>
           <Route path='viewlogo' element={<CompanyLogo />}></Route>
           <Route path='otpverification' element={<OtpVerification/>}></Route>
-
-
-
-
-
-
           <Route path='Redbus' element={<RedBus />} />
 
 
@@ -73,5 +64,3 @@ function App() {
 export default App;
 
 
-// <Route path='emps' element={<EmployeeForm/>}></Route>
-//           <Route path='lists' element = {<EmployeeList/>}></Route>x
