@@ -1,0 +1,75 @@
+.addcompany-container {
+  padding: 25px;
+  font-family: "Inter", "Poppins", sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+}
+
+.addcompany-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: auto;
+}
+
+.addcompany-form h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: #007bff;
+}
+
+.addcompany-form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.addcompany-form input,
+.addcompany-form select,
+.addcompany-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+.addcompany-form input:focus,
+.addcompany-form select:focus,
+.addcompany-form textarea:focus {
+  border-color: #007bff;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
