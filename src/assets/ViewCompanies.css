@@ -1,0 +1,82 @@
+.viewcompanies-container {
+  padding: 25px;
+  font-family: "Inter", "Poppins", sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+}
+
+.viewcompanies-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+}
+
+.loading-text,
+.no-company-text {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 50px;
+}
+
+/* ===== Card Grid ===== */
+.company-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 22px;
+  padding: 15px;
+}
+
+/* ===== Company Card ===== */
+.company-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-color: #bbb;
+}
+
+.company-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.company-card p {
+  font-size: 15px;
+  margin: 5px 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.company-card p strong {
+  font-weight: 600;
+  color: #111;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .company-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .company-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

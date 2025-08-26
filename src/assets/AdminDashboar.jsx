@@ -49,6 +49,10 @@ export const AdminDashboar = () => {
           <div style={styles.cardTitle}>Pending Company</div>
         </Link>
 
+        <Link to="/viewalldetails" style={styles.card}>
+          <div style={styles.cardTitle}>All details</div>
+        </Link>
+
         <div style={styles.card}>
           <div style={styles.cardTitle}>System Health</div>
         </div>
